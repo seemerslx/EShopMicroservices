@@ -1,7 +1,4 @@
-﻿using Catalog.API.Models;
-using Catalog.API.Products.GetProductsById;
-
-namespace Catalog.API.Products.GetProductById;
+﻿namespace Catalog.API.Products.GetProductById;
 
 public record GetProductByIdResponse(Product Product);
 
