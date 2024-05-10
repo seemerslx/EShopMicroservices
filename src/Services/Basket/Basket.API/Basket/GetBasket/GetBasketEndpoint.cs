@@ -26,5 +26,5 @@ public class GetBasketEndpoint : ICarterModule
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .WithSummary("Get Product By Id")
         .WithDescription("Get Product By Id");
-    }
+    } 
 }
