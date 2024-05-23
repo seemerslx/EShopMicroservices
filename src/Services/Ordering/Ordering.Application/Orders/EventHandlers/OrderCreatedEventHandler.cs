@@ -9,7 +9,7 @@ public class OrderCreatedEventHandler(ILogger<OrderCreatedEventHandler> logger) 
     public Task Handle(OrderCreatedEvent notification, CancellationToken cancellationToken)
     {
         // todo ALEX: 
-        logger.LogInformation("Domain Event handled: {DomainEvent}.", notification);
+        logger.LogInformation("Domain Event handled: {DomainEvent}.", notification.GetType().Name);
         return Task.CompletedTask;
     }
 }
